@@ -1,0 +1,130 @@
+@import "./reset";
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainlightBlueColor);
+    border-radius: 1.5rem;
+    padding: 2rem 2rem;
+    .sec-input-label {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0rem;
+
+      .form-group-radio-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .form-radio {
+        display: flex;
+        background-color: white;
+        width: 35%;
+        padding: 1rem 0.5rem;
+        border-radius: 1rem;
+        margin-right: 0.5rem;
+        margin-top: 0.3rem;
+        justify-content: space-around;
+        align-items: center;
+        .form-radio-btn {
+          color: grey;
+        }
+      }
+      .label {
+        margin-left: 0.6rem;
+        margin-bottom: 0.3rem;
+      }
+      .input-submit {
+        background-color: var(--blueColor);
+        color: var(--mainWhiteColor);
+        padding: 0.8rem 0;
+        border: 0;
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        &:hover {
+          cursor: pointer;
+          background-color: #007dd1;
+        }
+      }
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      .checkmark:after {
+        left: 3.5px;
+        top: 0px;
+        width: 2px;
+        height: 8px;
+        border: solid var(--blueColor);
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .checkbox-btn {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark:after {
+          display: block;
+        }
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        background-color: rgb(202, 202, 202);
+        border-radius: 0.2rem;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      }
+    }
+
+    .input {
+      border: 0;
+      outline: none;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        background: transparent;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-transform: uppercase;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+
+      &::-webkit-datetime-edit {
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+        color: grey;
+      }
+
+      &::placeholder {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

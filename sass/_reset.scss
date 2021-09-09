@@ -1,0 +1,22 @@
+/* font Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% => 1rem = 10px */
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mainBlackColor: #000;
+  --mainWhiteColor: #fff;
+  --mainBlueColor: #3498db;
+  --blueColor: #3498db;
+  --mainlightBlueColor: #e5eef3;
+}

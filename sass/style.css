@@ -1,0 +1,219 @@
+/* font Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5% => 1rem = 10px */
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mainBlackColor: #000;
+  --mainWhiteColor: #fff;
+  --mainBlueColor: #3498db;
+  --blueColor: #3498db;
+  --mainlightBlueColor: #e5eef3;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--mainlightBlueColor);
+  border-radius: 1.5rem;
+  padding: 2rem 2rem;
+}
+
+main form .sec-input-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0rem;
+}
+
+main form .sec-input-label .form-group-radio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form .sec-input-label .form-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 35%;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form .sec-input-label .form-radio .form-radio-btn {
+  color: grey;
+}
+
+main form .sec-input-label .label {
+  margin-left: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+main form .sec-input-label .input-submit {
+  background-color: var(--blueColor);
+  color: var(--mainWhiteColor);
+  padding: 0.8rem 0;
+  border: 0;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+}
+
+main form .sec-input-label .input-submit:hover {
+  cursor: pointer;
+  background-color: #007dd1;
+}
+
+main form .checkbox-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+main form .checkbox-group .checkmark:after {
+  left: 3.5px;
+  top: 0px;
+  width: 2px;
+  height: 8px;
+  border: solid var(--blueColor);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+main form .checkbox-group .checkbox-btn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+main form .checkbox-group .checkbox-btn:checked ~ .checkmark:after {
+  display: block;
+}
+
+main form .checkbox-group .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #cacaca;
+  border-radius: 0.2rem;
+}
+
+main form .checkbox-group .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+main form .input {
+  border: 0;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+main form .input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+main form .input::-webkit-datetime-edit {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0rem 0.5rem;
+  color: grey;
+}
+
+main form .input::-webkit-input-placeholder {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+main form .input:-ms-input-placeholder {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+main form .input::-ms-input-placeholder {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+main form .input::placeholder {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>#practice_02</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <ul>
+          <li class="sec-input-label">
+            <label class="label">FullName</label>
+            <input
+              type="text"
+              class="input"
+              name="FullName"
+              placeholder="Your Name"
+            />
+          </li>
+          <li class="sec-input-label">
+            <label class="label">Email Address</label>
+            <input
+              type="email"
+              class="input"
+              name="Email"
+              placeholder="Email Address"
+            />
+          </li>
+          <li class="sec-input-label">
+            <label class="label">Date of Birth</label>
+            <input
+              type="date"
+              class="input"
+              id="input-date"
+              name="dateOfBirthday"
+            />
+          </li>
+          <li class="sec-input-label">
+            <div id="main-label-radio-form">
+              <label class="label">Gender</label>
+            </div>
+            <div class="form-group-radio-btn">
+              <div class="form-radio">
+                <input type="radio" name="gender" />
+                <label class="form-radio-btn">Male</label>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="gender" />
+                <label class="form-radio-btn">Female</label>
+              </div>
+            </div>
+          </li>
+          <li class="sec-input-label">
+            <div class="checkbox-group">
+              <!-- <input type="checkbox" class="checkbox-btn" />
+              <span class="checkmark"></span>
+              <label>I accept the terms & conditions</label> -->
+              <label
+                >I accept the terms & conditions
+                <input type="checkbox" class="checkbox-btn" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </li>
+          <li class="sec-input-label">
+            <input type="submit" class="input-submit" value="Create Account" />
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>
